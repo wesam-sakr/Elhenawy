@@ -3,9 +3,11 @@ $(document).ready(function () {
     // loading
   
     $("body").css('overflow-y', 'auto');
+
     $('#loading').fadeOut(500);
   
-    $("#country").countrySelect();
+    $('select').niceSelect();
+    
   
     // user sub menu 
   
