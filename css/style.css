@@ -15,7 +15,7 @@
 
 
 * {
-   font-family: 'Tajawal', sans-serif;
+   font-family: 'Almarai', sans-serif;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -560,6 +560,7 @@ img {
    border: 1px solid #D6D6D6;
    border-radius: 50px;
    position: relative;
+   background: #F8F8F8;
 }
 .middle-nav .search-box select{
    padding-inline-start: .5rem;
@@ -575,21 +576,22 @@ img {
 .middle-nav .search-box input{
    width: 100%;
    height: 100%;
-   padding: 10px 10px 10px 100px;
+   padding: 10px;
    font-size: 16px;
-   border-radius: 40px;
+   border-radius: 0px;
+   background: transparent;
 }
 .middle-nav .search-box input::placeholder{
    color: #BFBFBF;
 }
-.middle-nav .search-box button{
+.middle-nav .search-box button {
    position: absolute;
-   left: -1px;
-   top: -1px;
-   background: var(--dark-blue);
+   left: 0px;
+   top: 0px;
+   background: #F8F8F8;
    color: #fff;
    padding: 1px 30px;
-   height: 50px;
+   height: 48px;
    font-size: 16px;
    border-radius: 40px 0 0 40px;
 }
@@ -781,7 +783,8 @@ header .parent .cat_3 {
 }
 .card-img-top img {
    object-fit: contain;
-   width: 58%;
+   width: 58% !important;
+   margin: auto;
    text-align: center;
    aspect-ratio: 5 / 8;
 }
@@ -812,13 +815,50 @@ header .parent .cat_3 {
 }
 
 
+.mostSale{
+   background: var(--white);
+}
+.mostSale .card{
+   background: #FAFAFA;
+}
+.mostSale .card .fav{
+   background: var(--white);
+}
+.suggest .product .card {
+
+   margin: 1rem 0rem 1.5rem 0rem;
+}
+
 /* -------- discover Offer -------- */
 .discoverOffer{
    background: url(../images/overhead-view-dried-tea-herbs-isolated-white-backdrop.png);
    background-color: #00000060;
    padding: 10px;
-   border-radius: 10px;
+   border-radius: 20px;
    padding: 7rem 2rem;
+   background-repeat: round;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+}
+
+.getOffer h5{
+   color: var(--mint);
+   margin-bottom: 1.1rem;
+}
+.getOffer h5, .getOffer p{
+   font-weight: bold;
+}
+.discoverOffer h3{
+   color: var(--mint);
+   font-weight: 700;
+   margin-bottom: 1.5rem;
+}
+
+
+.discoverOffer .main-btn{
+   padding-block: .75rem;
 }
 
 
@@ -839,11 +879,15 @@ header .parent .cat_3 {
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
+   text-align: center;
+}
+.feature .f_img img{
+   width: 24px;
 }
 
 
 /* -------- subscribe email -------- */
-.subscribe{
+.subscribe,.features{
    color: var(--white);
    background: var(--mint);
    margin-bottom: 2rem;
@@ -853,6 +897,26 @@ header .parent .cat_3 {
    font-weight: 500;
 }
 
+
+.discover-info {
+   position: absolute;
+   width: 50%;
+   top: calc(50% + 20px);
+   right: 50%;
+   text-align: center;
+   transform: translate(50%, -50%);
+}
+.discover-info img{
+   width: 170px;
+}
+.discover-info h3{
+   color: var(--mint);
+   margin-top: .75rem;
+   margin-bottom: 2rem;
+}
+.discover-info .main-btn{
+   padding: .75rem 2rem;
+}
 
 /* -------- footer -------- */
 footer h5{
@@ -864,14 +928,15 @@ footer h5{
 footer li a {
    color: #858585 !important;
    display: inline-block;
-   margin-bottom: .5rem;
+   margin-bottom: .9rem;
 }
 .logo img{
-   width: 110px;
-   margin-bottom: 1rem;
+   width: 100px;
+   margin-bottom: .5rem;
 }
 .logo p{
-   font: 14px Almarai;
+   font: 15px Almarai;
+   line-height: 1.4;
    letter-spacing: 0px;
    color: #858585;
    text-transform: capitalize;
@@ -1006,6 +1071,13 @@ footer li a {
    footer .logo{
       text-align: center;
    }
+   .discover-info img {
+      width: 135px;
+   }
+   .discover-info h3{
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+   }
 }
 @media (max-width: 578px){
    .top-nav {
@@ -1022,6 +1094,13 @@ footer li a {
    }
    .span-2 {
       columns: 3;
+   }
+   .feature{
+      width: 100%;
+   }
+   .fav {
+      position: absolute;
+      inset-inline-end: 8px;
    }
 }
 

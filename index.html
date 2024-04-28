@@ -43,7 +43,7 @@
               <a href="terms.html">سياسة الخصوصية</a>
             </li>
             <li>
-              <a href="">سياسة الارجاع</a>
+              <a href="return.html">سياسة الارجاع</a>
             </li>
             <li>
               <a href="contactUs.html">تواصل معنا</a>
@@ -83,7 +83,7 @@
         >
           <div class="col-4 col-md-3">
             <div class="logo">
-              <img src="images/logo.png" alt="" />
+              <img src="images/logo.svg" alt="" />
             </div>
           </div>
           <div class="col-8 col-lg-6">
@@ -121,10 +121,10 @@
                   <a href="about.html">من نحن ؟</a>
                 </li>
                 <li>
-                  <a href="services.html">العروض</a>
+                  <a href="offers.html">العروض</a>
                 </li>
                 <li>
-                  <a href="shop.html">المنتجات</a>
+                  <a href="products.html">المنتجات</a>
                 </li>
               </ul>
             </div>
@@ -140,7 +140,7 @@
                 </a>
               </li>
               <li>
-                <a href="login.html">
+                <a href="intro.html">
                   <i class="fa-solid fa-user"></i> 
                 </a>
               </li>
@@ -211,7 +211,7 @@
       </div>
     </section>
 
-    <section class="products mb-5">
+    <section class="products my-5">
       <div class="container-lg">
         <div class="title-link">
           <div>
@@ -221,7 +221,7 @@
           </div>
           <a href="products.html">المزيد <i class="fa-solid fa-chevron-left"></i></a>
         </div>
-        <div class="row row-cols-5">
+        <div class="row gy-5 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
           <div class="col mb-4">
             <div class="product">
               <div class="card">
@@ -385,24 +385,361 @@
       </div>
     </section>
 
-    <section class="getOffer">
+    <section class="getOffer mb-5">
       <div class="container-lg">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6">
-
+        <div class="row gy-3 align-items-center">
+          <div class="col-12 col-md-5">
+            <h5>توفير العروض</h5>
+            <p>
+              استكشف أحدث الصفقات الحصرية على مجموعة جديدة من المنتجات المتاحة لفترة محدودة فقط. لا تفوت الفرصة للوفاء عندما تشتري بكميات كبيرة
+            </p>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-7">
             <div class="discoverOffer">
               <h3>استكشف عروض متجرنا الآن</h3>
-              <a href="">تسوق الآن</a>
+              <a href="" class="main-btn px-4 mt-3">تسوق الآن</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="subscribe py-5">
+
+
+    <section class="mostSale products py-5">
       <div class="container-lg">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="title-link">
+          <div>
+            <h5 class="title">
+              الأكثر مبيعًا
+            </h5>
+          </div>
+          <a href="products.html">المزيد <i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+        <div class="row gy-5 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <span class="badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <!-- add the "invisible" class if there's no discount -->
+                <span class="invisible badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <!-- add the "invisible" class if there's no discount -->
+                <span class="invisible badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <span class="badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <!-- add the "invisible" class if there's no discount -->
+                <span class="invisible badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <span class="badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <!-- add the "invisible" class if there's no discount -->
+                <span class="invisible badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <!-- add the "invisible" class if there's no discount -->
+                <span class="invisible badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <!-- add the "invisible" class if there's no discount -->
+                <span class="invisible badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="product">
+              <div class="card">
+                <a href="productDetails.html" class="link"></a>
+                <!-- add the "invisible" class if there's no discount -->
+                <span class="invisible badge discount text-bg-dark">20%</span>
+                <button class="fav">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="card-img-top">
+                  <img src="images/Mask Group 3.png" alt="..." />
+                </div>
+                <div class="card-body p-0">
+                  <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                    <span class="card-cat">البهارات</span>
+                    <span> | </span>
+                    <h6 class="">بذور الكتان</h6>
+                  </div>
+                  <p class="card-price">
+                    السعر من <span>125 جنية</span>
+                    إلى
+                    <span> 700 جنية</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button data-bs-toggle="modal"
+                  href="#product-details"
+                  role="button">إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features py-5">
+      <div class="container-lg">
+        <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center">
           <div class="feature">
             <div class="f_img">
               <img src="images/svgexport-6 - 2022-09-12T101445.088.svg" alt="">
@@ -414,7 +751,7 @@
           </div>
           <div class="feature">
             <div class="f_img">
-              <img src="images/svgexport-6 - 2022-09-12T101445.088.svg" alt="">
+              <img src="images/svgexport-6 - 2022-09-12T102031.026.svg" alt="">
             </div>
             <div class="f_desc">
               <h5>دعم فني</h5>
@@ -423,7 +760,7 @@
           </div>
           <div class="feature">
             <div class="f_img">
-              <img src="images/svgexport-6 - 2022-09-12T101445.088.svg" alt="">
+              <img src="images/svgexport-6 - 2022-09-12T102309.457.svg" alt="">
             </div>
             <div class="f_desc">
               <h5>إمكانية الدفع عند الإستلام</h5>
@@ -432,7 +769,7 @@
           </div>
           <div class="feature">
             <div class="f_img">
-              <img src="images/svgexport-6 - 2022-09-12T101445.088.svg" alt="">
+              <img src="images/svgexport-6 - 2022-09-12T102525.689.svg" alt="">
             </div>
             <div class="f_desc">
               <h5>عروض مميزة</h5>
@@ -443,13 +780,70 @@
       </div>
     </section>
 
-    <div class="discover">
+    <section class="suggest products my-5">
+      <div class="container-lg">
+        <div class="title-link">
+          <div>
+            <h5 class="title">
+              مقترح
+            </h5>
+          </div>
+          <a href="products.html">المزيد <i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+        <div class="owl-carousel">
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <span class="badge discount text-bg-dark">20%</span>
+              <button class="fav">
+                <i class="bi bi-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/Mask Group 3.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title d-flex justify-content-center align-items-center gap-1">
+                  <span class="card-cat">البهارات</span>
+                  <span> | </span>
+                  <h6 class="">بذور الكتان</h6>
+                </div>
+                <p class="card-price">
+                  السعر من <span>125 جنية</span>
+                  إلى
+                  <span> 700 جنية</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button data-bs-toggle="modal"
+                href="#product-details"
+                role="button">إضافة للسلة</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <section class="mb-5">
+      <div class="container-lg">
+        <div class="discover d-none d-md-block position-relative">
+          <img src="images/Group 67977.png" alt="">
+          <div class="discover-info">
+            <img src="images/logo.svg" alt="">
+            <h3 class="fw-bold">
+              استكشف عروض متجرنا الآن
+            </h3>
+            <a href="#" class="main-btn">
+              تسوق الآن
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="subscribe py-4">
       <div class="container-lg">
-        <div class="row align-items-center">
+        <div class="row gy-3 align-items-center">
           <div class="col-md-6">
             <div class="d-flex align-items-center gap-3 subscribe-info">
               <i class="fs-1 bi bi-envelope"></i>
