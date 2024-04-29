@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+
+  var bodyDir = $('body').css('direction')
+  console.log(bodyDir)
+  var dirAr
+  if (bodyDir == "rtl") {
+    dirAr = true
+  }
+  else {
+    dirAr = false
+  }
+
+
   // loading
 
   $("body").css('overflow-y', 'auto');
@@ -8,9 +20,13 @@ $(document).ready(function () {
 
   $('select').niceSelect();
 
-  $(".fav").click(function(){
+  $(".fav").click(function () {
     $(this).children(".bi").toggleClass('bi-heart-fill').toggleClass('bi-heart');
   });
+
+  $('.toggleFav').click(function () {
+    $(this).toggleClass('added')
+  })
 
 
   // ----- scroll top button ------
@@ -36,11 +52,38 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: 730 }, '300');
   });
 
+
+  const inputElements = [...document.querySelectorAll("input.code")];
+  inputElements.forEach((ele, index) => {
+    ele.addEventListener("keydown", (e) => {
+      if (e.keyCode === 8 && e.target.value === "")
+        inputElements[Math.max(0, index - 1)].focus();
+    });
+    ele.addEventListener("input", (e) => {
+      inputElements[index].focus();
+      const [first, ...rest] = e.target.value;
+      e.target.value = first ?? ""; // first will be undefined when backspace was entered, so set the input to ""
+      const lastInputBox = index === inputElements.length - 1;
+      const didInsertContent = first !== undefined;
+      if (didInsertContent && !lastInputBox) {
+        inputElements[index + 1].focus();
+        inputElements[index + 1].value = rest.join("");
+        inputElements[index + 1].dispatchEvent(new Event("input"));
+      }
+    });
+  });
+
+  function onSubmit(e) {
+    e.preventDefault();
+    const code = inputElements.map(({ value }) => value).join("");
+    console.log(code);
+  }
+
   $(".suggest .owl-carousel").owlCarousel({
     loop: true,
     margin: 24,
     items: 5,
-    rtl: true,
+    rtl: dirAr,
     responsive: {
       0: {
         items: 2,
@@ -55,6 +98,14 @@ $(document).ready(function () {
         nav: false,
       }
     }
+  });
+
+  $("#your-rate").rateYo({
+    starWidth: "15px",
+    ratedFill: "#FFC107",
+    rating: 0,
+    fullStar: true,
+    rtl: dirAr
   });
 
 });
