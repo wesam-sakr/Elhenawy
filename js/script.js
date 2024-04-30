@@ -126,4 +126,11 @@ $(document).ready(function () {
     }
   });
 
+  $("#filter").click(function () {
+    $(".filter").toggleClass("filter-toggle");
+  });
+  $(".filter-header .btn-close").click(function () {
+    $(".filter").toggleClass("filter-toggle");
+  });
+
 });
