@@ -108,4 +108,22 @@ $(document).ready(function () {
     rtl: dirAr
   });
 
+
+  $(".add-address").click(function () {
+    if ($(".form-address").css("display") == "block") {
+      $(".form-address").hide();
+    } else {
+      $(".form-address").show();
+    }
+  });
+  $(".input-cridet").hide();
+
+  $('.cart input[type="radio"]').change(function () {
+    if ($(".lable-cridet").is(":checked")) {
+      $(".input-cridet").show();
+    } else {
+      $(".input-cridet").hide();
+    }
+  });
+
 });
