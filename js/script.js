@@ -133,4 +133,8 @@ $(document).ready(function () {
     $(".filter").toggleClass("filter-toggle");
   });
 
+  $("#filter").click(function () {
+    $(".filter").toggleClass("filter-toggle");
+  });
+
 });

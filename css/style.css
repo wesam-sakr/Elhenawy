@@ -1733,8 +1733,8 @@ footer li a {
    width: 10%;
 }
 
-
-.filter{
+/* --------== products page ==-------- */
+.filter , .profile-nav{
    border: 1px solid #E5E5E5;
    border-radius: 11px;
    padding: 1.5rem;
@@ -1756,7 +1756,7 @@ footer li a {
    margin-bottom: .75rem !important;
 }
 
-#filter {
+#filter , #profile_nav {
    position: fixed;
    top: 50%;
    right: 0;
@@ -1768,13 +1768,48 @@ footer li a {
    z-index: 99;
 }
 
-.filter-header {
+.filter-header, .profile-header {
    display: flex;
    justify-content: space-between;
    align-items: center;
    margin-bottom: 0.75rem;
    padding-bottom: 1.25rem;
    border-bottom: 1px solid #dddddd;
+}
+
+.profile-nav .nav-link{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: #2A2A2A;
+}
+/* --------== about page ==-------- */
+.about p{
+   line-height: 1.8;
+   color: #B7B7B7;
+}
+.about .about_img{
+   position: relative;
+   padding-inline-start: 2rem;
+}
+/* .about .about_img::after{
+   content: '';
+   background: var(--mint);
+   width: calc(100% - 2rem);
+   height: 100%;
+   position: absolute;
+   inset-inline-end: 10px;
+   top: 10px;
+   border-radius: 0px 0px 0px 212px;
+   z-index: -1;
+
+} */
+
+/* --------== terms page ==-------- */
+
+.terms p{
+   line-height: 1.8;
+   color: #353535; 
 }
 
 /* -------- media -------- */
