@@ -2,7 +2,6 @@ $(document).ready(function () {
 
 
   var bodyDir = $('body').css('direction')
-  console.log(bodyDir)
   var dirAr
   if (bodyDir == "rtl") {
     dirAr = true
@@ -133,8 +132,32 @@ $(document).ready(function () {
     $(".filter").toggleClass("filter-toggle");
   });
 
-  $("#filter").click(function () {
-    $(".filter").toggleClass("filter-toggle");
+  $("#profile_nav").click(function () {
+    $(".profile-nav").toggleClass("Pnav-toggle");
   });
+  $(".profile-header .btn-close").click(function () {
+    $(".profile-nav").toggleClass("Pnav-toggle");
+  });
+
+  /* -------------- upload profile pic ---------------- */
+  if ($(".profile-pic").length > 0) {
+    const imgDiv = document.querySelector(".profile-pic");
+    const img = document.querySelector("#photo");
+    const file = document.querySelector("#file");
+    const uploadBtn = document.querySelector("#uploadBtn");
+
+    //when we choose a pic to upload
+
+    file.addEventListener("change", function () {
+      const choosedFile = this.files[0];
+      if (choosedFile) {
+        const reader = new FileReader();
+        reader.addEventListener("load", function () {
+          img.setAttribute("src", reader.result);
+        });
+        reader.readAsDataURL(choosedFile);
+      }
+    });
+  }
 
 });

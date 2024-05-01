@@ -243,7 +243,7 @@ iframe {
 }
 
 .main-btn {
-   background: var(--mint);
+   background: var(--mint) !important;
    color: var(--white);
    border-radius: 10px;
    width: 100%;
@@ -1738,6 +1738,7 @@ footer li a {
    border: 1px solid #E5E5E5;
    border-radius: 11px;
    padding: 1.5rem;
+   background: #F8F8F8;
 }
 
 .filter .accordion-item,
@@ -1756,7 +1757,7 @@ footer li a {
    margin-bottom: .75rem !important;
 }
 
-#filter , #profile_nav {
+#filter {
    position: fixed;
    top: 50%;
    right: 0;
@@ -1777,12 +1778,115 @@ footer li a {
    border-bottom: 1px solid #dddddd;
 }
 
+
+#profile_nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   background-color: var(--mint);
+   border-radius: 10px;
+   color: var(--white);
+   padding: .5rem 1rem;
+   margin-bottom: 1.5rem;
+   font-size: 18px;
+}
 .profile-nav .nav-link{
    display: flex;
    align-items: center;
-   gap: 10px;
+   gap: 12px;
    color: #2A2A2A;
+   margin-bottom: 1rem;
+   font-weight: bold;
 }
+.profile-nav .nav-link.active{
+   color: var(--white);
+   background: var(--mint);
+   border-radius: 10px;
+}
+.profile-nav .nav-link i{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 34px;
+   height: 34px;
+   border-radius: 50%;
+   background: var(--white);
+   color: #919191;
+}
+.profile-nav .nav-link.active i{
+   color: var(--mint);
+}
+
+
+.profile .profile-pic-icon {
+   position: absolute;
+   top: 0%;
+   bottom: 0%;
+   right: 0%;
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   z-index: 3;
+   opacity: 0;
+   background-color: #56878b57;
+   color: #fff;
+   font-size: xx-large;
+   border-radius: 0.35rem;
+   transition: 0.2s;
+ }
+ 
+ .profile .profile-pic {
+   width: 227px;
+   border-radius: 20px;
+   overflow: hidden;
+   height: 198px;
+   margin-bottom: 36px;
+   border-radius: 0.5rem;
+   background-color: transparent !important;
+   border: 1px solid #E5E5E5;
+ }
+ 
+ .profile .profile-pic img {
+   object-fit: cover;
+   height: 100%;
+ }
+ 
+ .profile .profile-pic input {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 10;
+   opacity: 0;
+ }
+ 
+ .profile .profile-pic:hover .profile-pic-icon {
+   opacity: 1;
+ }
+ .profile label{
+   margin-bottom: .5rem;
+ }
+ .logout{
+   color: #ff0000;
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   background-color: transparent;
+   font-weight: bold;
+   margin-top: 1rem;
+   padding-top: 1rem;
+   border-top: 1px solid #E8E8E8;
+ }
+
+ .profile .cart .cart-address{
+   margin-top: 0;
+ }
+ 
 /* --------== about page ==-------- */
 .about p{
    line-height: 1.8;
@@ -1804,6 +1908,16 @@ footer li a {
    z-index: -1;
 
 } */
+
+.table>:not(caption)>*>* {
+   background: transparent;
+   text-align: center;
+   border-bottom: 1px solid gainsboro;
+   padding: 18px 5px;
+}
+.ordNum, .ordPrice{
+   color: var(--mint) !important;
+}
 
 /* --------== terms page ==-------- */
 
@@ -1880,7 +1994,7 @@ footer li a {
       inset-inline-end: 8px;
    }
 
-   .filter {
+   .filter ,.profile-nav{
       display: block;
       width: 400px;
       transform: translate(400px);
@@ -1896,11 +2010,32 @@ footer li a {
       background: white;
    }
 
-   .filter.filter-toggle {
+   .filter.filter-toggle ,.profile-nav.Pnav-toggle {
       transform: translate(0);
    }
 
    #filter {
       display: block;
-  }
+   }
+   #wizard .step {
+      flex-direction: column;
+      gap: 10px;
+   }
+   .step .bi, .step svg {
+      margin: 0;
+   }
+   #wizard .step.active::after, #wizard .step.finish::after {
+      width: 30px;
+      transform: translateX(0px);
+      bottom: 67%;
+   }
+   .complete-order, .add-address {
+      width: 49.5% !important;
+   }
+   .intro .overlay .choose {
+      width: 80%;
+   }
+   #scroll-top {
+      inset-inline-start: 1rem;
+   }
 }
