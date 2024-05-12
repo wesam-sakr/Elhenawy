@@ -1733,6 +1733,81 @@ footer li a {
    width: 10%;
 }
 
+
+
+
+.arrow-steps{
+   display: flex;
+}
+.arrow-steps .step {
+   text-align: center;
+   color: var(--black);
+   cursor: default;
+   margin: 0 3px;
+   padding: 10px ;
+   position: relative;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   transition: background-color 0.2s ease;
+ }
+ 
+
+ 
+ .arrow-steps .step span {
+   font-weight: bold;
+   position: relative;
+ }
+ 
+ .arrow-steps .step span::before {
+   font-family: "FontAwesome";
+   content: '\f253';
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   background: #fff;
+   color: #666;
+   margin-inline-end: 1rem;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+ 
+ .arrow-steps .step.done span:before {
+   content: "✔";
+   background: var(--mint);
+   color: #fff;
+ }
+
+ .arrow-steps .step:not(:last-child) span::after{
+   content: '';
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 100px;
+   height: 0px;
+   border-top: 2px dashed #BEBEBE;
+   color: #BEBEBE;
+   margin-inline-start: 1.5rem;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+} 
+
+.box-val{
+   background: #FFFFFF 0% 0% no-repeat padding-box;
+   border: 1px solid #DBDBDB;
+   border-radius: 6px;
+   padding: .5rem 1.7rem;
+}
+
 /* --------== products page ==-------- */
 .filter , .profile-nav{
    border: 1px solid #E5E5E5;
@@ -2038,4 +2113,30 @@ footer li a {
    #scroll-top {
       inset-inline-start: 1rem;
    }
+
+   .arrow-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+   }
+
+   .arrow-steps .step:not(:last-child) span::after {
+      content: '';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 0;
+      height: 20px;
+      position: absolute;
+      inset-inline-start: 0;
+      bottom: -75%;
+      border-inline-end: 2px dashed #BEBEBE;
+      color: #BEBEBE;
+      margin-inline-start: 1.5rem;
+      transform: translate(50%, 100%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+  }
 }
