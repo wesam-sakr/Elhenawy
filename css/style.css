@@ -2195,6 +2195,7 @@ footer li a {
    .arrow-steps .step:not(:last-child) span::after {
       width: 0;
       height: 20px;
+      border-inline-start: 2px dashed #BEBEBE;
       position: absolute;
       inset-inline-start: 0;
       bottom: -50px;
