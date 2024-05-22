@@ -13,7 +13,6 @@
    --black: #000000;
 }
 
-
 * {
    font-family: 'Almarai', sans-serif;
    margin: 0;
@@ -22,6 +21,9 @@
    outline: none;
    border: none;
    text-decoration: none;
+}
+
+html[dir="ltr"] *:not(input) {
    text-transform: capitalize;
 }
 
@@ -2225,18 +2227,30 @@ html[dir='ltr'] #wizard .step.finish::after {
    padding-inline-start: 2rem;
 }
 
-/* .about .about_img::after{
+.about .about_img img {
+   filter: drop-shadow(4px 18px 15px #00000040);
+   border-radius: 0px 0px 0px 160px;
+   -webkit-border-radius: 0px 0px 0px 160px;
+   -moz-border-radius: 0px 0px 0px 160px;
+   -ms-border-radius: 0px 0px 0px 160px;
+   -o-border-radius: 0px 0px 0px 160px;
+}
+
+.about .about_img::after {
    content: '';
    background: var(--mint);
-   width: calc(100% - 2rem);
+   width: calc(100% - 1.6rem);
    height: 100%;
    position: absolute;
-   inset-inline-end: 10px;
-   top: 10px;
-   border-radius: 0px 0px 0px 212px;
+   inset-inline-end: 1px;
+   top: 13px;
+   border-radius: 0px 0px 0px 160px;
    z-index: -1;
-
-} */
+   -webkit-border-radius: 0px 0px 0px 160px;
+   -moz-border-radius: 0px 0px 0px 160px;
+   -ms-border-radius: 0px 0px 0px 160px;
+   -o-border-radius: 0px 0px 0px 160px;
+}
 
 .table>:not(caption)>*>* {
    background: transparent;
@@ -2259,34 +2273,47 @@ html[dir='ltr'] #wizard .step.finish::after {
 
 
 /* --------== invoice page ==-------- */
-.invoice{
-   padding-block: 5rem;
+.invoice {
+   padding-block: 2rem;
 }
-.invoice_logo img{
+
+.invoice_logo img {
    width: 180px;
 }
-.invoice .table-responsive{
+
+.invoice .invoice_header .table tr * {
+   text-align: start;
+   color: #888888 !important;
+}
+.invoice .table-responsive {
    padding-block: 2rem;
    margin-block: 2rem;
    border-top: 28px solid #A0CCCF;
    border-bottom: 28px solid #A0CCCF;
 }
+
 /* .table>:not(caption)>*>* */
 .invoice .table thead tr {
    background: #E9E9E9;
 }
-.invoice .table tr *{
+
+.invoice .table tr * {
    padding-block: 10px;
    border: unset;
+   padding-inline-end: 25px;
 }
-.invoice .table tr td:first-child, .table tr th:first-child{
+
+.invoice .table tr td:first-child,
+.table tr th:first-child {
    border-radius: 0 8px 8px 0;
    -webkit-border-radius: 0 8px 8px 0;
    -moz-border-radius: 0 8px 8px 0;
    -ms-border-radius: 0 8px 8px 0;
    -o-border-radius: 0 8px 8px 0;
 }
-.invoice .table tr td:last-child, .table tr th:last-child{
+
+.invoice .table tr td:last-child,
+.table tr th:last-child {
    border-radius: 8px 0 0 8px;
    -webkit-border-radius: 8px 0 0 8px;
    -moz-border-radius: 8px 0 0 8px;
@@ -2294,9 +2321,32 @@ html[dir='ltr'] #wizard .step.finish::after {
    -o-border-radius: 8px 0 0 8px;
    color: var(--mint);
 }
+
 .invoice .table tbody tr:nth-child(even) {
    background: #F5F5F5
 }
+
+.prices tbody tr
+,.invoice_num tbody tr,
+.client_detail tbody tr{
+   background: transparent !important;
+}
+.prices tbody tr td{
+   color: var(--mint);
+}
+.prices tbody tr:last-of-type td{
+   background-color: var(--mint);
+}
+.prices tbody tr:last-of-type td{
+   color: #fff !important;
+   font-weight: bold;
+}
+@media (max-width: 600px)  {
+   .invoice_logo img {
+      width: 125px;
+  }
+}
+
 /* -------- media -------- */
 @media (max-width: 998px) {
    .navbar-collapse {
