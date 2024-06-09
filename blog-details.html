@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir='rtl'>
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/nice-select.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -85,7 +86,7 @@
           <div class="col-4 col-md-3">
             <div class="logo">
               <a class="navbar-brand m-0" href="index.html">
-                  <img src="images/logo.svg" alt="الحناوي العطار">
+                <img src="images/logo.svg" alt="الحناوي العطار" />
               </a>
             </div>
           </div>
@@ -134,7 +135,7 @@
                   <a href="offers.html">العروض</a>
                 </li>
                 <li>
-                  <a href="products.html"  class="active">المنتجات</a>
+                  <a href="products.html" class="active">المنتجات</a>
                 </li>
               </ul>
             </div>
@@ -165,334 +166,125 @@
       <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            المنتجات
-          </li>
+          <li class="breadcrumb-item active" aria-current="page">المقالات</li>
         </ol>
       </nav>
     </section>
 
-    <section class="container-lg">
-      <h4 class="mint my-4">المنتجات</h4>
-    </section>
-
-    <!-- filter -->
-    <section class="mb-5">
+    <section class="single-item-page py-5">
       <div class="container-lg">
-        <div class="row gy-4">
-          <div class="col-5 col-lg-3 filter">
-            <div class="filter-header d-md-none">
-              <h5>التصفية</h5>
-              <button class="btn-close">
-              </button>
-            </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <!-- ترتيب حسب  -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                    ترتيب حسب 
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="sort" id="sort_by1">
-                          <label class="form-check-label" for="sort_by1">
-                            الرائج
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="sort" id="sort_by2">
-                          <label class="form-check-label" for="sort_by2">
-                            متوسط التقييم 
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="sort" id="sort_by3">
-                          <label class="form-check-label" for="sort_by3">
-                            الأحدث
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="sort" id="sort_by4">
-                          <label class="form-check-label" for="sort_by4">
-                            السعر الأقل للأعلى
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="sort" id="sort_by5">
-                          <label class="form-check-label" for="sort_by5">
-                            السعر الإعلى للأقل
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="item-details">
+              <div class="item-title article-title">
+                <h4>عنوان المقال يكتب هنا</h4>
+                <ul class="mb-3">
+                  <li><i class="bi bi-calendar-week-fill"></i> 15 مايو 2022</li>
+                  <li><i class="bi bi-pencil-square"></i> بواسطة الأدمن</li>
+                  <li><i class="bi bi-eye-fill"></i> 3 مرات المشاهدة</li>
+                </ul>
               </div>
-              <!--  فئات المنتجات  -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    فئات المنتجات 
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="category" id="category1">
-                          <label class="form-check-label" for="category1">
-                            العروض
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="category" id="category2">
-                          <label class="form-check-label" for="category2">
-                            منتجاتنا الخاصة
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="category" id="category3">
-                          <label class="form-check-label" for="category3">
-                            التوابل
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="category" id="category4">
-                          <label class="form-check-label" for="category4">
-                            الأعشاب
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="category" id="category5">
-                          <label class="form-check-label" for="category5">
-                            ياميش رمضان
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="category" id="category6">
-                          <label class="form-check-label" for="category6">
-                            مكسرات
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="category" id="category7">
-                          <label class="form-check-label" for="category7">
-                            خامات حلوانية
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="category" id="category8">
-                          <label class="form-check-label" for="category8">
-                            زيوت طبيعية
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <img src="images/blog.webp" alt="..." />
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق. إذا كنت تح تاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا
+                يحوي أخطاء لغوية، مولد الن ص العربى مفيد لمصممي المواقع على وجه
+                الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. ومن هنا وج ب على المصمم أن يضع نصوصا مؤقتة
+                على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن
+                يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص هو مثال لنص يمكن
+                أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت
+                تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد
+                النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل
+                فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع. ومن
+                هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل
+                الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث
+                عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر
+                بشكل لا يليق. هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة
+                فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم.
+                لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
             </div>
-            <!-- البحث حسب السعر -->
-            <div class="priceRange py-3">
-              <h6 class="mb-3">البحث حسب السعر</h6>
-              <div class="d-flex gap-2">
-                <input class="form-control py-1" placeholder="من" type="number" name="" min="0">
-                <input class="form-control py-1" placeholder="الى" type="number" name="" min="0">
-              </div>
-            </div>
-            
-            <button type="button" class="main-btn">تصفية</button>
           </div>
-          <div class="col-md-9">
-            <div class="products">
-              <div class="row gy-5 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-                <div class="col mb-4">
-                  <div class="product">
-                    <div class="card">
-                      <a href="productDetails.html" class="link"></a>
-                      <span class="badge discount text-bg-dark">20%</span>
-                      <button class="fav">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <div class="card-img-top">
-                        <img src="images/زيتون-.jpg" alt="..." />
-                      </div>
-                      <div class="card-body p-0">
-                        <div class="card-title d-flex justify-content-center align-items-center gap-1">
-                          <span class="card-cat">البهارات</span>
-                          <span> | </span>
-                          <h6 class="">بذور الكتان</h6>
-                        </div>
-                        <p class="card-price">
-                          السعر من <span>125 جنية</span>
-                          إلى
-                          <span> 700 جنية</span>
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <button data-bs-toggle="modal"
-                        href="#product-details"
-                        role="button">إضافة للسلة</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="product">
-                    <div class="card">
-                      <a href="productDetails.html" class="link"></a>
-                      <!-- add the "invisible" class if there's no discount -->
-                      <span class="invisible badge discount text-bg-dark">20%</span>
-                      <button class="fav">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <div class="card-img-top">
-                        <img src="images/زيتون-.jpg" alt="..." />
-                      </div>
-                      <div class="card-body p-0">
-                        <div class="card-title d-flex justify-content-center align-items-center gap-1">
-                          <span class="card-cat">البهارات</span>
-                          <span> | </span>
-                          <h6 class="">بذور الكتان</h6>
-                        </div>
-                        <p class="card-price">
-                          السعر من <span>125 جنية</span>
-                          إلى
-                          <span> 700 جنية</span>
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <button data-bs-toggle="modal"
-                        href="#product-details"
-                        role="button">إضافة للسلة</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="product">
-                    <div class="card">
-                      <a href="productDetails.html" class="link"></a>
-                      <!-- add the "invisible" class if there's no discount -->
-                      <span class="invisible badge discount text-bg-dark">20%</span>
-                      <button class="fav">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <div class="card-img-top">
-                        <img src="images/زيتون-.jpg" alt="..." />
-                      </div>
-                      <div class="card-body p-0">
-                        <div class="card-title d-flex justify-content-center align-items-center gap-1">
-                          <span class="card-cat">البهارات</span>
-                          <span> | </span>
-                          <h6 class="">بذور الكتان</h6>
-                        </div>
-                        <p class="card-price">
-                          السعر من <span>125 جنية</span>
-                          إلى
-                          <span> 700 جنية</span>
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <button data-bs-toggle="modal"
-                        href="#product-details"
-                        role="button">إضافة للسلة</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="product">
-                    <div class="card">
-                      <a href="productDetails.html" class="link"></a>
-                      <!-- add the "invisible" class if there's no discount -->
-                      <span class="invisible badge discount text-bg-dark">20%</span>
-                      <button class="fav">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <div class="card-img-top">
-                        <img src="images/زيتون-.jpg" alt="..." />
-                      </div>
-                      <div class="card-body p-0">
-                        <div class="card-title d-flex justify-content-center align-items-center gap-1">
-                          <span class="card-cat">البهارات</span>
-                          <span> | </span>
-                          <h6 class="">بذور الكتان</h6>
-                        </div>
-                        <p class="card-price">
-                          السعر من <span>125 جنية</span>
-                          إلى
-                          <span> 700 جنية</span>
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <button data-bs-toggle="modal"
-                        href="#product-details"
-                        role="button">إضافة للسلة</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="product">
-                    <div class="card">
-                      <a href="productDetails.html" class="link"></a>
-                      <!-- add the "invisible" class if there's no discount -->
-                      <span class="invisible badge discount text-bg-dark">20%</span>
-                      <button class="fav">
-                        <i class="bi bi-heart"></i>
-                      </button>
-                      <div class="card-img-top">
-                        <img src="images/زيتون-.jpg" alt="..." />
-                      </div>
-                      <div class="card-body p-0">
-                        <div class="card-title d-flex justify-content-center align-items-center gap-1">
-                          <span class="card-cat">البهارات</span>
-                          <span> | </span>
-                          <h6 class="">بذور الكتان</h6>
-                        </div>
-                        <p class="card-price">
-                          السعر من <span>125 جنية</span>
-                          إلى
-                          <span> 700 جنية</span>
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <button data-bs-toggle="modal"
-                        href="#product-details"
-                        role="button">إضافة للسلة</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+          <div class="col-12 col-md-4">
+            <div class="side-other-items">
+              <h5>البحث</h5>
+              <div class="input-box">
+                <input
+                  type="search"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="اكتب بحثك هنا"
+                />
+                <button><i class="bi bi-search"></i></button>
+              </div>
+              <div class="items-container">
+                <h4>مقالات مشابهة</h4>
+                <a href="blog-details.html" class="item">
+                  <img src="images/blog.webp" alt="" />
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى
+                  </p>
+                </a>
+                <a href="blog-details.html" class="item">
+                  <img src="images/blog.webp" alt="" />
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى
+                  </p>
+                </a>
+                <a href="blog-details.html" class="item">
+                  <img src="images/blog.webp" alt="" />
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى
+                  </p>
+                </a>
+                <a href="blog-details.html" class="item">
+                  <img src="images/blog.webp" alt="" />
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى
+                  </p>
+                </a>
+                <a href="blog-details.html" class="item">
+                  <img src="images/blog.webp" alt="" />
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى
+                  </p>
+                </a>
+                <a href="blog-details.html" class="item">
+                  <img src="images/blog.webp" alt="" />
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى
+                  </p>
+                </a>
+                <a href="blog-details.html" class="item">
+                  <img src="images/blog.webp" alt="" />
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -500,7 +292,6 @@
       </div>
     </section>
 
-    <!-- subscribe -->
     <section class="subscribe py-4">
       <div class="container-lg">
         <div class="row gy-3 align-items-center">
@@ -533,7 +324,6 @@
       </div>
     </section>
 
-    <!-- footer -->
     <footer>
       <div class="container-lg">
         <div class="mb-5 row gy-4 justify-content-between">
@@ -784,8 +574,6 @@
       </div>
     </div>
 
-    <button id="filter"><i class="bi bi-sliders fs-5"></i></button>
-
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
@@ -798,25 +586,19 @@
     <!-- nice select script -->
     <script src="js/jquery.nice-select.min.js"></script>
 
-    <!-- font awesom script -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
-      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
     <!-- rateyo script -->
     <script src="js/jquery.rateyo.min.js"></script>
-
-    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
 
     <!-- wow script -->
     <!-- <script src="js/wow.min.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
+    <!-- intlTelInput script -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/intlTelInput.min.js"></script>
+
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
   </body>
+  
 </html>

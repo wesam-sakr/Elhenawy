@@ -78,6 +78,16 @@ $(document).ready(function () {
     console.log(code);
   }
 
+  $(".cat_1 .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 24,
+    items: 1,
+    rtl: dirAr,
+    autoplay: true,
+    dots :true,
+    autoplayHoverPause: true,
+  });
+
   $(".suggest .owl-carousel").owlCarousel({
     loop: true,
     margin: 24,
